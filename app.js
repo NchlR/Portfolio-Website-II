@@ -21,4 +21,8 @@ function contact(event) {
     })
 }
 
+function toggleModal() {
+    document.body.classList.add("modal--open");
+}
+
 
