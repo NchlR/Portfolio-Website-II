@@ -41,14 +41,14 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -67,7 +67,7 @@
             <b class="text__colour"> Frontend Software Engineer </b>
             with a keen eye for design and a passion for user experience.
             <br />
-            Here's more <b class="text__colour"> about me</b>.
+            Here's more <b class="text__colour click" onclick="toggleModal()"> about me</b>.
           </p>
           <div class="social__list">
             <a
@@ -94,7 +94,7 @@
               <div class="scroll__icon click"></div>
             </a>
             <div class="modal">
-              <div class="modal__half modal__about">
+              <div class="modal__half modal__about" >
                 <h3 class="modal__title modal__title--about">
                   Here's a bit about me.
                 </h3>
@@ -130,6 +130,7 @@
                 </div>
               </div>
               <div class="modal__half modal__contact">
+              <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">
                   Let's have a chat!
                 </h3>
@@ -158,7 +159,6 @@
                   Thanks for the message! Looking forward to speaking to you soon!
                 </div>
               </div>
-              <i class="fas fa-times modal__exit click"></i>
             </div>
           </div>
         </div>
