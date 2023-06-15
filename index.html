@@ -1,288 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nico Ramos</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="app.js"></script>
-    <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-      (function(){
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nico Ramos</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("h8ooOzyl9xkdyyQ2N");
-      })();
-    </script>
-  </head>
-  <body>
-    <section id="landing-page">
-      <nav>
-        <figure>
-          <img id="personal-logo" src="./assets/Nico 2.png" alt="" />
-        </figure>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Projects</a
-            >
-          </li>
-          <li class="nav__link" onclick="toggleModal()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contact</a
-            >
-          </li>
-          <li class="nav__link click" onclick="toggleContrast()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              ><i class="fas fa-adjust"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+    })();
+  </script>
+</head>
 
-      <header class="header">
-        <div class="header__content">
-          <h1 class="title">Hey</h1>
-          <h1 class="title text__colour">I'm Nico</h1>
-          <p class="header__para">
-            I'm a dedicated and enthusiastic
-            <b class="text__colour"> Frontend Software Engineer </b>
-            with a keen eye for design and a passion for user experience.
-            <br />
-            Here's more <b class="text__colour click" onclick="toggleModal()"> about me</b>.
-          </p>
-          <div class="social__list">
-            <a
-              href="https://www.linkedin.com/in/jnrcode/" target="_blank"
-              class="social__link click">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a
-              href="https://github.com/NchlR" target="_blank"
-              class="social__link click">
-              <i class="fab fa-github"></i>
-            </a>
-            <a
-              href="./assets/Justin Ramos - Tech.pdf" target="_blank"
-              class="social__link click">
-              <i class="fas fa-file-pdf"></i>
-            </a>
-      </header>
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/Nico 2.png" alt="" />
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link">
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black"><i
+              class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
 
-            <button class="mail__btn click" onclick="toggleModal()">
-              <i class="fas fa-envelope"></i>
-            </button>
-            <a href="" class="scroll">
-              <div class="scroll__icon click"></div>
-            </a>
-            <div class="modal">
-              <div class="modal__half modal__about" >
-                <h3 class="modal__title modal__title--about">
-                  Here's a bit about me.
-                </h3>
-                <h4 class="modal__sub-title modal__sub-title--about">
-                  Junior Frontend Software Engineer
-                </h4>
-                <p class="modal__para">
-                  I'm a 22 year-old Canadian
-                  <b class="text__colour"> frontend software engineer </b>
-                  specializing in crafting dynamic and intuitive web
-                  applications.
-                  <br />
-                  With a keen eye for <b class="text__colour">design</b> and a passion for <b class="text__colour">user experience</b>,
-                  I strive to create seamless and engaging digital experiences.
-                  <br />
-                  By leveraging my expertise in <b class="text__colour">HTML, CSS, and JavaScript</b>, I aim
-                  to bring ideas to life through clean code and innovative
-                  solutions.
-                </p>
-                <div class="modal__languages">
-                  <figure class="modal__language">
-                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg" alt="">
-                    <span class="language__name">HTML</span>
-                  </figure>
-                  <figure class="modal__language">
-                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="">
-                    <span class="language__name">CSS</span>
-                  </figure>
-                  <figure class="modal__language">
-                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/7/73/Javascript-736400_960_720.png" alt="">
-                    <span class="language__name">JavaScript</span>
-                  </figure>
-                </div>
-              </div>
-              <div class="modal__half modal__contact">
-              <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-                <h3 class="modal__title modal__title--contact">
-                  Let's have a chat!
-                </h3>
-                <h3 class="modal__sub-title modal__sub-title--contact">
-                    I'm currently open to new opportunities!
-                </h3>
-                <form id="contact__form" onsubmit="contact(event)">
-                  <div class="form__item">
-                    <label class="forn__item--label">Name</label>
-                    <input class="input" name="user_name" type="text"></input>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hello!</h1>
+        <h1 class="title text__colour">I'm Nico</h1>
+        <p class="header__para">
+          I'm a dedicated and enthusiastic
+          <b class="text__colour"> Frontend Software Engineer </b>
+          with a keen eye for design and a passion for user experience.
+          <br />
+          Here's more <b class="text__colour click" onclick="toggleModal()"> about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/jnrcode/" target="_blank" class="social__link click">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/NchlR" target="_blank" class="social__link click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="./assets/Justin Ramos - Tech.pdf" target="_blank" class="social__link click">
+            <i class="fas fa-file-pdf"></i>
+          </a>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#landing-page" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">
+          Here's a bit about me.
+        </h3>
+        <h4 class="modal__sub-title modal__sub-title--about">
+          Junior Frontend Software Engineer
+        </h4>
+        <p class="modal__para">
+          I'm a 22 year-old Canadian
+          <b class="text__colour"> frontend software engineer </b>
+          specializing in crafting dynamic and intuitive web
+          applications.
+          <br />
+          With a keen eye for <b class="text__colour">design</b> and a passion for <b class="text__colour">user
+            experience</b>,
+          I strive to create seamless and engaging digital experiences.
+          <br />
+          By leveraging my expertise in <b class="text__colour">HTML, CSS, and JavaScript</b>, I aim
+          to bring ideas to life through clean code and innovative
+          solutions.
+        </p>
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg" alt="">
+            <span class="language__name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+              alt="">
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/7/73/Javascript-736400_960_720.png" alt="">
+            <span class="language__name">JavaScript</span>
+          </figure>
+        </div>
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I'm currently open to new opportunities!
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="forn__item--label">Name</label>
+            <input class="input" name="user_name" type="text"></input>
+          </div>
+          <div class="form__item">
+            <label class="forn__item--label">E-mail</label>
+            <input class="input" name="user_email" type="email"></input>
+          </div>
+          <div class="form__item">
+            <label class="forn__item--label">Message</label>
+            <textarea class="input" name="message" type="text"></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">Send</button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking to you soon!
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <img src="./assets/semi circle.svg" class="shape shape--0">
+    <img src="./assets/circle.svg" class="shape shape--1">
+    <img src="./assets/squiggly.svg" class="shape shape--2">
+    <img src="./assets/circle.svg" class="shape shape--3">
+    <img src="./assets/triangle.svg" class="shape shape--4">
+    <img src="./assets/circle.svg" class="shape shape--5">
+    <img src="./assets/squiggly.svg" class="shape shape--6">
+    <img src="./assets/circle.svg" class="shape shape--7">
+    <img src="./assets/semi circle.svg" class="shape shape--8">
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="text__colour">projects</span>
+        </h1>
+        <ul class="project__list">
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Library - ECom.png" class="project__img" alt="" />
+              <div class="project__wrapper--bg">
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Library - Ecommerce Website
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML | CSS | JavaScript
+                  </h4>
+                  <p class="project__description--para"></p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/NchlR/-Website-Library-E-Commerce" target="_blank"
+                      class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://nchlr.github.io/-Website-Library-E-Commerce/" target="_blank"
+                      class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
                   </div>
-                  <div class="form__item">
-                    <label class="forn__item--label">E-mail</label>
-                    <input class="input" name="user_email" type="email"></input>
-                  </div>
-                  <div class="form__item">
-                    <label class="forn__item--label">Message</label>
-                    <textarea class="input" name="message" type="text"></textarea>
-                  </div>
-                <button id="contact__submit" class="form__submit">Send</button>
-                </form>
-                <div class="modal__overlay modal__overlay--loading">
-                  <i class="fas fa-spinner"></i>
-                </div>
-                <div class="modal__overlay modal__overlay--success">
-                  Thanks for the message! Looking forward to speaking to you soon!
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/Bunly Landscaping.png" class="project__img" alt="" />
+              <div class="project__wrapper--bg">
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Bunly Landscaping
+                  </h3>
+                  <h4 class="project__description--sub-title">HTML | CSS</h4>
+                  <p class="project__description--para"></p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/NchlR/-Website-Bunly-Landscaping" target="_blank"
+                      class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://nchlr.github.io/-Website-Bunly-Landscaping/" target="_blank"
+                      class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="project">
+            <div class="project__wrapper">
+              <img src="./assets/FirstPortfolioSite.png" class="project__img" alt="" />
+              <div class="project__wrapper--bg">
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Portfolio Website (V1)
+                  </h3>
+                  <h4 class="project__description--sub-title">HTML | CSS</h4>
+                  <p class="project__description--para"></p>
+                  <div class="project__description--links">
+                    <a href="https://github.com/NchlR/-Website-Portfolio" target="_blank"
+                      class="project__description--link">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://nchlr.github.io/-Website-Portfolio/" target="_blank"
+                      class="project__description--link">
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <figure>
+          <img src="./assets/Nico 2.png" id="personal-logo" alt="" />
+        </figure>
+        <div class="footer__social--list">
+          <a href="https://github.com/NchlR" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            Github
+          </a>
+          <a href="https://www.linkedin.com/in/jnrcode/" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            LinkedIn
+          </a>
+          <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
+            Contact
+          </a>
+          <a href="./assets/Justin Ramos - Tech.pdf" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            Resume
+          </a>
+        </div>
+        <div class="footer__copyright">(2023) Made By Nico Ramos</div>
+      </div>
+    </div>
+  </footer>
+</body>
 
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            Here are some of my <span class="text__colour">projects</span>
-          </h1>
-          <ul class="project__list">
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/Library - ECom.png"
-                  class="project__img"
-                  alt=""
-                />
-                <div class="project__wrapper--bg">
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      Library - Ecommerce Website
-                    </h3>
-                    <h4 class="project__description--sub-title">
-                      HTML | CSS | JavaScript
-                    </h4>
-                    <p class="project__description--para"></p>
-                    <div class="project__description--links">
-                      <a
-                        href="https://github.com/NchlR/-Website-Library-E-Commerce"
-                        target="_blank"
-                        class="project__description--link"
-                      >
-                        <i class="fab fa-github"></i>
-                      </a>
-                      <a
-                        href="https://nchlr.github.io/-Website-Library-E-Commerce/"
-                        target="_blank"
-                        class="project__description--link"
-                      >
-                        <i class="fas fa-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/Bunly Landscaping.png"
-                  class="project__img"
-                  alt=""
-                />
-                <div class="project__wrapper--bg">
-                  <div class="project__description">
-                    <h3 class="project__description--title">
-                      Library - Ecommerce Website
-                    </h3>
-                    <h4 class="project__description--sub-title">HTML | CSS</h4>
-                    <p class="project__description--para"></p>
-                    <div class="project__description--links">
-                      <a
-                        href="https://github.com/NchlR/-Website-Bunly-Landscaping"
-                        target="_blank"
-                        class="project__description--link"
-                      >
-                        <i class="fab fa-github"></i>
-                      </a>
-                      <a
-                        href="https://nchlr.github.io/-Website-Bunly-Landscaping/"
-                        target="_blank"
-                        class="project__description--link"
-                      >
-                        <i class="fas fa-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row footer__row">
-          <figure>
-            <img src="./assets/Nico 2.png" id="personal-logo" alt="" />
-          </figure>
-          <div class="footer__social--list">
-            <a
-              href="https://github.com/NchlR"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Github
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jnrcode/"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              LinkedIn
-            </a>
-            <a
-              href="mailto:nico051701@outlook.com"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Contact
-            </a>
-            <a
-              href="./assets/Justin Ramos - Tech.pdf"
-              target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Resume
-            </a>
-          </div>
-          <div class="footer__copyright">(2023) Made By Nico Ramos</div>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>
